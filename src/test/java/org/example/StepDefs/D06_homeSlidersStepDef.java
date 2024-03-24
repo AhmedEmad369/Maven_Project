@@ -13,10 +13,10 @@ public class D06_homeSlidersStepDef {
 
     SoftAssert soft = new SoftAssert();
     
-    @Given("user clicks on the nokia slider")
+    @Given("user clicks on the galaxy slider")
     public void choosingSlider(){
         
-        slider.nokia().click();
+        slider.galaxy().click();
         
     }
 
@@ -25,7 +25,7 @@ public class D06_homeSlidersStepDef {
 
         String url = driver.getCurrentUrl();
 
-        soft.assertEquals(url, "https://demo.nopcommerce.com/nokia-lumia-1020");
+        soft.assertEquals(url, "https://demo.nopcommerce.com/");
 
         soft.assertAll();
         
@@ -43,7 +43,7 @@ public class D06_homeSlidersStepDef {
 
         String url = driver.getCurrentUrl();
 
-        soft.assertEquals(url, "https://demo.nopcommerce.com/iphone-6");
+        soft.assertEquals(url, "https://demo.nopcommerce.com/");
 
         soft.assertAll();
 

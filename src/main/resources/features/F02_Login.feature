@@ -2,7 +2,7 @@
 Feature: F02_Login | users could use login functionality to use their accounts
   Scenario: user could login with valid email and password
   Given user go to login page
-  When user login with valid "ae16@test.com" and "P@ssw0rd"
+  When user login with valid "ae19@test.com" and "P@ssw0rd"
   And user press on login button
   Then user login to the system successfully
 
@@ -21,6 +21,6 @@ Feature: F02_Login | users could use login functionality to use their accounts
 
     Examples:
       | username | password |
-      | ae10@test.com | P@ssw0rd |
-      | ae11@test.com | P@ssw0rd |
-      | ae12@test.com | P@ssw0rd |
+      | ae18@test.com | P@ssw0rd |
+      | ae19@test.com | P@ssw0rd |
+      | ae20@test.com | P@ssw0rd |

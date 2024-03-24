@@ -77,16 +77,16 @@ public class P03_homePage {
         return title;
     }
 
-    public WebElement nokia(){
+    public WebElement galaxy(){
 
-        WebElement nokiaSlider = driver.findElement(By.cssSelector("a[rel=\"0\"]"));
+        WebElement nokiaSlider = driver.findElement(By.cssSelector("a[rel=\"1\"]"));
         return nokiaSlider;
 
     }
 
     public WebElement iphone(){
 
-        WebElement appleSlider = driver.findElement(By.cssSelector("a[rel=\"1\"]"));
+        WebElement appleSlider = driver.findElement(By.cssSelector("a[rel=\"0\"]"));
         return appleSlider;
 
     }
@@ -128,7 +128,7 @@ public class P03_homePage {
 
     public WebElement notificationBar(){
 
-        WebElement bar = driver.findElement(By.className("success"));
+        WebElement bar = driver.findElement(By.id("bar-notification"));
         return bar;
 
     }

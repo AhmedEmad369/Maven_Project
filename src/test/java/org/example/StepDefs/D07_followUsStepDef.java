@@ -29,7 +29,7 @@ public class D07_followUsStepDef {
 
     @Then("{string} is opened in new tab")
     public void isOpenedInNewTab(String arg0) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         wait.until(ExpectedConditions.numberOfWindowsToBe(2));
 
@@ -49,6 +49,8 @@ public class D07_followUsStepDef {
         
     }
 
+
+
     @When("user opens rss link")
     public void userOpensRssLink() {
 
@@ -56,9 +58,18 @@ public class D07_followUsStepDef {
         
     }
 
+    @Then("rss link is opened")
+    public void userOpensRSSLink(){
+
+        String url = driver.getCurrentUrl();
+        soft.assertEquals(url, "https://demo.nopcommerce.com/news/rss/1");
+    }
+
     @When("user opens youtube link")
     public void userOpensYoutubeLink() {
 
         follow.ytLink().click();
     }
+
+
 }

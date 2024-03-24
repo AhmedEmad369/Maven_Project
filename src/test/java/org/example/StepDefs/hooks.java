@@ -16,6 +16,8 @@ public class hooks {
     public void openBrowser(){
 
         WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().clearDriverCache().setup();
+        WebDriverManager.chromedriver().clearResolutionCache().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
